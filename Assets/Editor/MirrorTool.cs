@@ -7,10 +7,10 @@ public class MirrorTool : EditorWindow {
     [MenuItem("Tools/Mirror Tool")]
     public static void OpenMirrorTool() => GetWindow<MirrorTool>("Mirror Tool");
 
-    public List<GameObject> sourceObjects;
+    public List<GameObject> sourceObjects = new List<GameObject>();
     public Transform mirrorTf;
 
-    private List<GameObject> mirroredObjects;
+    private List<GameObject> mirroredObjects = new List<GameObject>();
 
     private bool sourceObjectsToogle;
     private Vector2 scrollPos;
@@ -38,7 +38,7 @@ public class MirrorTool : EditorWindow {
     private Color mirrorZColor = new Color(0f, 0f, 1f, 0.3f);
     private Color mirrorZColorOutline = new Color(0f, 0f, 1f, 0.8f);
 
-    private List<int> toRemove;
+    private List<int> toRemove = new List<int>();
 
     SerializedObject so;
 
