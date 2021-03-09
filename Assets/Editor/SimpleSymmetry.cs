@@ -8,7 +8,7 @@ public class SimpleSymmetry : EditorWindow {
     [MenuItem("Tools/Simple Symmetry")]
     public static void OpenSimpleSymmetry() => GetWindow<SimpleSymmetry>("Simple Symmetry");
 
-    private List<MirrorPair> sourceObjects = new List<MirrorPair>();
+    private List<MirrorPair> sourceObjects;
 
     private Transform mirror;
 
@@ -20,6 +20,7 @@ public class SimpleSymmetry : EditorWindow {
     private bool liveUpdate = false;
 
     private void OnEnable() {
+        if(sourceObjects == null) sourceObjects = new List<MirrorPair>();
         SceneView.duringSceneGui += DuringSceneGUI;
     }
 
@@ -34,7 +35,10 @@ public class SimpleSymmetry : EditorWindow {
 
     private void OnGUI() {
         using(new GUILayout.VerticalScope(EditorStyles.helpBox)) {
-            if(GUILayout.Button("Update")) UpdateMirror();
+            using(new GUILayout.HorizontalScope()) {
+                if(GUILayout.Button("Update")) UpdateMirror();
+                if(GUILayout.Button("Recopy")) RecopyObjects();
+            }
             liveUpdate = EditorGUILayout.Toggle("Live Update", liveUpdate);
             EditorGUILayout.Space();
             if(GUILayout.Button("Add Selection")) AddSelection();
@@ -85,12 +89,29 @@ public class SimpleSymmetry : EditorWindow {
     }
 
     private void UpdateMirror() {
-        foreach(MirrorPair mirrorPair in sourceObjects) {
-            mirrorPair.UpdateMirrorTf(mirror);
-            mirrorPair.UpdateMirror();
+        if(MirrorTfCheck()) {
+            foreach(MirrorPair mirrorPair in sourceObjects) {
+                mirrorPair.UpdateMirrorTf(mirror);
+                mirrorPair.UpdateMirror();
+            }
+        }
+    }
+    private void RecopyObjects() {
+        if(MirrorTfCheck()) {
+            foreach(MirrorPair mirrorPair in sourceObjects) {
+                mirrorPair.Recopy();
+            }
         }
     }
 
-
-    
+    private bool MirrorTfCheck() {
+       
+        if( !(mirror == null)) {
+            return true;
+        } else {
+            Debug.LogError("Mirror Not Added");
+            return false;
+        }
+       
+    }
 }

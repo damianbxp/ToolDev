@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class MirrorPair {
@@ -24,7 +25,6 @@ public class MirrorPair {
             CreateNewMirrorObject();
 
         TransformMirrorObject(mirrorPoint);
-        
     }
 
     private void CreateNewMirrorObject() {
@@ -41,5 +41,10 @@ public class MirrorPair {
 
     public void DestroyCopy() {
         MonoBehaviour.DestroyImmediate(copy);
+    }
+
+    public void Recopy() {
+        DestroyCopy();
+        CreateNewMirrorObject();
     }
 }
