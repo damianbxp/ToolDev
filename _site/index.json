@@ -1,0 +1,77 @@
+{
+  "api/Global.Barrel.html": {
+    "href": "api/Global.Barrel.html",
+    "title": "Class Barrel | My tools Documentation",
+    "keywords": "Class Barrel Inheritance Object Barrel Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Barrel : MonoBehaviour Fields material Declaration public Material material Field Value Type Description Material sphereMesh Declaration public Mesh sphereMesh Field Value Type Description Mesh type Declaration public BarrelTypes type Field Value Type Description BarrelTypes Properties Mpb Declaration public MaterialPropertyBlock Mpb { get; } Property Value Type Description MaterialPropertyBlock Methods DrawDamageArea(Int32) Declaration public void DrawDamageArea(int drawMode) Parameters Type Name Description Int32 drawMode TryApplyColor() Declaration public void TryApplyColor()"
+  },
+  "api/Global.BarrelEditor.html": {
+    "href": "api/Global.BarrelEditor.html",
+    "title": "Class BarrelEditor | My tools Documentation",
+    "keywords": "Class BarrelEditor Inheritance Object BarrelEditor Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BarrelEditor : Editor Methods OnInspectorGUI() Declaration public override void OnInspectorGUI()"
+  },
+  "api/Global.BarrelManager.html": {
+    "href": "api/Global.BarrelManager.html",
+    "title": "Class BarrelManager | My tools Documentation",
+    "keywords": "Class BarrelManager Inheritance Object BarrelManager Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BarrelManager : MonoBehaviour Fields barrels Declaration public static List<Barrel> barrels Field Value Type Description List < Barrel > displayedType Declaration public static BarrelTypes displayedType Field Value Type Description BarrelTypes displayMode Declaration public static int displayMode Field Value Type Description Int32 drawDamageArea Declaration public static bool drawDamageArea Field Value Type Description Boolean drawPrecision Declaration public static int drawPrecision Field Value Type Description Int32 Methods UpdateAllBarrelsColors() Declaration public static void UpdateAllBarrelsColors()"
+  },
+  "api/Global.BarrelManagerEditor.html": {
+    "href": "api/Global.BarrelManagerEditor.html",
+    "title": "Class BarrelManagerEditor | My tools Documentation",
+    "keywords": "Class BarrelManagerEditor Inheritance Object BarrelManagerEditor Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BarrelManagerEditor : Editor Methods FindAssetsByType<T>() Declaration public static List<T> FindAssetsByType<T>() where T : UnityEngine.Object Returns Type Description List <T> Type Parameters Name Description T OnInspectorGUI() Declaration public override void OnInspectorGUI() UpdateBarrelTypesArray() Declaration public void UpdateBarrelTypesArray()"
+  },
+  "api/Global.BarrelTypes.html": {
+    "href": "api/Global.BarrelTypes.html",
+    "title": "Class BarrelTypes | My tools Documentation",
+    "keywords": "Class BarrelTypes Inheritance Object BarrelTypes Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BarrelTypes : ScriptableObject Fields color Declaration public Color color Field Value Type Description Color radius Declaration public float radius Field Value Type Description Single"
+  },
+  "api/Global.ExtensionMethods.html": {
+    "href": "api/Global.ExtensionMethods.html",
+    "title": "Class ExtensionMethods | My tools Documentation",
+    "keywords": "Class ExtensionMethods Inheritance Object ExtensionMethods Namespace : Global Assembly : cs.temp.dll.dll Syntax public static class ExtensionMethods Methods Contains(List<MirrorPair>, GameObject) Declaration public static bool Contains(this List<MirrorPair> list, GameObject gmToCheck) Parameters Type Name Description List < MirrorPair > list GameObject gmToCheck Returns Type Description Boolean"
+  },
+  "api/Global.Fence.html": {
+    "href": "api/Global.Fence.html",
+    "title": "Class Fence | My tools Documentation",
+    "keywords": "Class Fence Holds data about fence Inheritance Object Fence Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Fence : Editor"
+  },
+  "api/Global.FenceBuilder.html": {
+    "href": "api/Global.FenceBuilder.html",
+    "title": "Class FenceBuilder | My tools Documentation",
+    "keywords": "Class FenceBuilder Fence Builder Window Inheritance Object FenceBuilder Namespace : Global Assembly : cs.temp.dll.dll Syntax public class FenceBuilder : EditorWindow Methods OpenFenceBuilder() Declaration public static void OpenFenceBuilder()"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace Global | My tools Documentation",
+    "keywords": "Namespace Global Classes Barrel BarrelEditor BarrelManager BarrelManagerEditor BarrelTypes ExtensionMethods Fence Holds data about fence FenceBuilder Fence Builder Window MirrorPair MirrorTool MirrorToolGizmos SimpleSymmetry"
+  },
+  "api/Global.MirrorPair.html": {
+    "href": "api/Global.MirrorPair.html",
+    "title": "Class MirrorPair | My tools Documentation",
+    "keywords": "Class MirrorPair Inheritance Object MirrorPair Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MirrorPair Constructors MirrorPair(GameObject) Declaration public MirrorPair(GameObject source_) Parameters Type Name Description GameObject source_ Fields copy Declaration public GameObject copy Field Value Type Description GameObject source Declaration public GameObject source Field Value Type Description GameObject Methods DestroyCopy() Declaration public void DestroyCopy() Recopy() Declaration public void Recopy() UpdateMirror() Declaration public void UpdateMirror() UpdateMirrorTf(Transform) Declaration public void UpdateMirrorTf(Transform mirrorTf_) Parameters Type Name Description Transform mirrorTf_"
+  },
+  "api/Global.MirrorTool.html": {
+    "href": "api/Global.MirrorTool.html",
+    "title": "Class MirrorTool | My tools Documentation",
+    "keywords": "Class MirrorTool Inheritance Object MirrorTool Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MirrorTool : EditorWindow Fields mirrorTf Declaration public Transform mirrorTf Field Value Type Description Transform sourceObjects Declaration public List<GameObject> sourceObjects Field Value Type Description List < GameObject > Methods OpenMirrorTool() Declaration public static void OpenMirrorTool()"
+  },
+  "api/Global.MirrorToolGizmos.html": {
+    "href": "api/Global.MirrorToolGizmos.html",
+    "title": "Class MirrorToolGizmos | My tools Documentation",
+    "keywords": "Class MirrorToolGizmos Inheritance Object MirrorToolGizmos Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MirrorToolGizmos : MonoBehaviour"
+  },
+  "api/Global.SimpleSymmetry.html": {
+    "href": "api/Global.SimpleSymmetry.html",
+    "title": "Class SimpleSymmetry | My tools Documentation",
+    "keywords": "Class SimpleSymmetry Inheritance Object SimpleSymmetry Namespace : Global Assembly : cs.temp.dll.dll Syntax public class SimpleSymmetry : EditorWindow Methods OpenSimpleSymmetry() Declaration public static void OpenSimpleSymmetry()"
+  },
+  "manual/coniunctis.html": {
+    "href": "manual/coniunctis.html",
+    "title": "Coniunctis nec qui et lanient monticolae vitae | My tools Documentation",
+    "keywords": "Coniunctis nec qui et lanient monticolae vitae Opem ille Lorem markdownum cavis exululat inutile. Illi quem caeli, vola patruo difficili Iuppiter Patraeque, est ardebant ingeniis Troica intus Amore tibi mirantem superfusis, multum. Ut Achilles Et sitim Tibi modo ait temptant crinita daret Pariter in removi offensasque Lenaeo damno terra Phoebes ut damnosa classis ignes templo; tua ulla capillos ultima. Videre percusso plectro templa fuit diva minimum debere, quid nomen Philomela animis. Verbis istis flagrat vulnera inpediique ignes. Gravi filo obvius arte Amphionis Panes emisitque iubet. Latona te timens Latentia ante, eundem meritorum sunto ! Elige in timuit templa ferrea, qui arma ligati stagnum turbant. Fraternaque aeternus, dedisse, naufragus corripiens ranas Amathunta et quod laetior culpa nec semper scorpius fuit vicem corpora ardere. Fallit in artus primordia, fratres per aliis , ipsi manu Asiae quod marmorea . mountain(googleVga, pngIphone); var radcabBitrate = dnsCronRecursion; gui(2); ipImageAix += vle(drm_cisc, horizontal + computer_key); jre(vaporware_adc_multi); Lumina ut tamen praesentia vidistis nymphae auroque Bromumque in portant furorem. Visa init resurgere praevitiat canibus et, dedignata turea, ilia. Pisenore mensura insula aere nec per o gladium causa: Alcidae. Veris sentes pallet, alta melius nostra amborum probant, deam. Iuventae dedimus nitidaque hunc traxisse sermonibus pectine flecti an pateres, hac ore gelidis foret semper. Sithon pelle. Bracchia Hippason videntur fateri hosti: palpitat animo est reliquit anne nam confusaque. Interea rex altis munera quem quae quoque rorant, rauco albescere scopulo moriensque parvo, pectus illa, quadrupedes. Notavit haec. Vertit pars quem Euryte casu usta iterum! Ablatum pectus corripiunt neu humus tamquam; ducens stellarum amore. Pulsisque latet, ad tamen victor fulva Tirynthius posco; qui inque in poena quidem enses !"
+  },
+  "manual/etiam.html": {
+    "href": "manual/etiam.html",
+    "title": "Etiam nantemque exul | My tools Documentation",
+    "keywords": "Etiam nantemque exul Cum tulit Lorem markdownum quos stimulosque altos . Putat nubes molle Troiae vero dea; nostraque plurima . Vos de mihi, credidit: salibus et iacuit, volvitur sunt unda fronti deriguisse refert . Sumpsisse viso Nubila nomine. Purpura se o et causa parva ripas, adsonat saevaque; quid modo ambo et venere voveo. Sine et esse, illa tempore, sive tibi roseo, ministerio altos. Trepident medicamine, primasque cum et peregit dapibusque quoslibet hominis quoque insula. Tepentibus ut Cecropios ab turba, est auro ferventi aliter duratos feres differtis Ausoniis potes, non noctis Laertaque iuvenes. Caelumque vestigia Et promissa fila sentiet leges; Phrygiae et levatus ferire? Salutifer coniugis fierent ante fecissent post vultumque ultima, per radios currere; tandem. Fuerat qua, ne foedera reformatus nunc diu dea audet nonne. Ut utinam mitia tenuerunt movent spectans Mavortis nulla ite, somnos exsiccata dixit Aeetias. Binas Trinacriam album ex ipse. Quoque una utraque tardius placetque gerere; mariti sed dare ludunt memorante Delphice corpora. Caret quantum intellegat venis gaudent eurus. Et suos crista; has et ferarum quid audit omine; mea cum praemia quae duris, suspicor. Adflati qui Spiro conata supprimit diemque; ora oblitus ensem alti non quo lacrimis ferunt, ageret Cebrenida rutilis delendaque? Terras lata modus: nec fas, misi utque adpositis Iunonis. Fide vidit, ferox Schoeneia mundi, voce, tellus pariterque pedum, sic Celadon securior corpora partesque posito. Potest faxo unda pendulaque ille rostro, haesit pars: formidine captat, viseret simulaverat! Sequi est peragit flumineae pallent simulatas formae avulsa, imagine undis; formam. Et nec sed adeunt, huic aequa et ignes nec, medere terram. Move ipsum abnuat retemptat retinebat duabus diu Iovi est pluma. Tecum non deducit Pelops Inachus: arcet aliquemque, regia telo. Tollens altore nec semel qui voce Palatinae Apertis et dei duo inquit ; luna secundo, fervida terret. In haec dextra septima Tydides tibi: congelat hospes nativum radice tegumenque membris Hesperio ne Libys, est vocabula siqua. Dumque stet mulces , ut fontem dea atricolor, est pronos, clarissimus poterat cum intrare sidere templi. cut_metadata(whitelistSequenceUnit.thick.of_bezel_cdma( address_suffix_troubleshooting), sram_trojan(4, hdmi_network - 1)); flash.apache -= web_gps_plug; if (offline.dac_bridge(scrollEbookRom, parameter.internal_target_superscalar(2)) < qwerty + 2 - ipvCgiContextual) { certificateIdeAsp = overclocking + app; supplyCard = siteRaster; } Sagitta curvum quoque petisti opibusque proximitas in, illa vestrum, mihi domum nescia flexit sacra in. Magni vive sim crescente causam saxo voluit, mens, quod. Tela ter ulterius similis illos nato refugit ait verbaque nec fatigatum penates iaculatricemque cecidit pinnas, cum. Misso contigit caelo dedissent lumina; nympha ad vobis occidat, malo sacra utrumque cunctos Diomedeos addita. Virgineus autumnos, ait mitissima curru: fuit sed fessi se habebat hactenus Ultor; meus."
+  }
+}

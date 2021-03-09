@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SimpleSymmetry
+  commentId: T:Global.SimpleSymmetry
+  id: SimpleSymmetry
+  parent: Global
+  children:
+  - Global.SimpleSymmetry.OpenSimpleSymmetry
+  langs:
+  - csharp
+  - vb
+  name: SimpleSymmetry
+  nameWithType: SimpleSymmetry
+  fullName: SimpleSymmetry
+  type: Class
+  source:
+    id: SimpleSymmetry
+    path: ''
+    startLine: 404
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class SimpleSymmetry : EditorWindow'
+    content.vb: >-
+      Public Class SimpleSymmetry
+          Inherits EditorWindow
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.SimpleSymmetry.OpenSimpleSymmetry
+  commentId: M:Global.SimpleSymmetry.OpenSimpleSymmetry
+  id: OpenSimpleSymmetry
+  parent: Global.SimpleSymmetry
+  langs:
+  - csharp
+  - vb
+  name: OpenSimpleSymmetry()
+  nameWithType: SimpleSymmetry.OpenSimpleSymmetry()
+  fullName: SimpleSymmetry.OpenSimpleSymmetry()
+  type: Method
+  source:
+    id: OpenSimpleSymmetry
+    path: ''
+    startLine: 405
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public static void OpenSimpleSymmetry()
+    content.vb: Public Shared Sub OpenSimpleSymmetry
+  overload: Global.SimpleSymmetry.OpenSimpleSymmetry*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SimpleSymmetry.OpenSimpleSymmetry*
+  commentId: Overload:Global.SimpleSymmetry.OpenSimpleSymmetry
+  name: OpenSimpleSymmetry
+  nameWithType: SimpleSymmetry.OpenSimpleSymmetry
+  fullName: SimpleSymmetry.OpenSimpleSymmetry

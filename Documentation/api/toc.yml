@@ -1,0 +1,29 @@
+### YamlMime:TableOfContent
+- uid: Global
+  name: Global
+  items:
+  - uid: Global.Barrel
+    name: Barrel
+  - uid: Global.BarrelEditor
+    name: BarrelEditor
+  - uid: Global.BarrelManager
+    name: BarrelManager
+  - uid: Global.BarrelManagerEditor
+    name: BarrelManagerEditor
+  - uid: Global.BarrelTypes
+    name: BarrelTypes
+  - uid: Global.ExtensionMethods
+    name: ExtensionMethods
+  - uid: Global.Fence
+    name: Fence
+  - uid: Global.FenceBuilder
+    name: FenceBuilder
+  - uid: Global.MirrorPair
+    name: MirrorPair
+  - uid: Global.MirrorTool
+    name: MirrorTool
+  - uid: Global.MirrorToolGizmos
+    name: MirrorToolGizmos
+  - uid: Global.SimpleSymmetry
+    name: SimpleSymmetry
+  name.vb: ''

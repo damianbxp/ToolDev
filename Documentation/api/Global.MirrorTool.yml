@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MirrorTool
+  commentId: T:Global.MirrorTool
+  id: MirrorTool
+  parent: Global
+  children:
+  - Global.MirrorTool.mirrorTf
+  - Global.MirrorTool.OpenMirrorTool
+  - Global.MirrorTool.sourceObjects
+  langs:
+  - csharp
+  - vb
+  name: MirrorTool
+  nameWithType: MirrorTool
+  fullName: MirrorTool
+  type: Class
+  source:
+    id: MirrorTool
+    path: ''
+    startLine: 119
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class MirrorTool : EditorWindow'
+    content.vb: >-
+      Public Class MirrorTool
+          Inherits EditorWindow
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.MirrorTool.OpenMirrorTool
+  commentId: M:Global.MirrorTool.OpenMirrorTool
+  id: OpenMirrorTool
+  parent: Global.MirrorTool
+  langs:
+  - csharp
+  - vb
+  name: OpenMirrorTool()
+  nameWithType: MirrorTool.OpenMirrorTool()
+  fullName: MirrorTool.OpenMirrorTool()
+  type: Method
+  source:
+    id: OpenMirrorTool
+    path: ''
+    startLine: 120
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public static void OpenMirrorTool()
+    content.vb: Public Shared Sub OpenMirrorTool
+  overload: Global.MirrorTool.OpenMirrorTool*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Global.MirrorTool.sourceObjects
+  commentId: F:Global.MirrorTool.sourceObjects
+  id: sourceObjects
+  parent: Global.MirrorTool
+  langs:
+  - csharp
+  - vb
+  name: sourceObjects
+  nameWithType: MirrorTool.sourceObjects
+  fullName: MirrorTool.sourceObjects
+  type: Field
+  source:
+    id: sourceObjects
+    path: ''
+    startLine: 123
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<GameObject> sourceObjects
+    return:
+      type: System.Collections.Generic.List{GameObject}
+    content.vb: Public sourceObjects As List(Of GameObject)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.MirrorTool.mirrorTf
+  commentId: F:Global.MirrorTool.mirrorTf
+  id: mirrorTf
+  parent: Global.MirrorTool
+  langs:
+  - csharp
+  - vb
+  name: mirrorTf
+  nameWithType: MirrorTool.mirrorTf
+  fullName: MirrorTool.mirrorTf
+  type: Field
+  source:
+    id: mirrorTf
+    path: ''
+    startLine: 124
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Transform mirrorTf
+    return:
+      type: Global.Transform
+    content.vb: Public mirrorTf As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.MirrorTool.OpenMirrorTool*
+  commentId: Overload:Global.MirrorTool.OpenMirrorTool
+  name: OpenMirrorTool
+  nameWithType: MirrorTool.OpenMirrorTool
+  fullName: MirrorTool.OpenMirrorTool
+- uid: System.Collections.Generic.List{GameObject}
+  commentId: T:System.Collections.Generic.List{GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: GameObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: GameObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
