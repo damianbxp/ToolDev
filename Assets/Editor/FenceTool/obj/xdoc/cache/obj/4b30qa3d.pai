@@ -1,0 +1,301 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: Global
+  language: CSharp
+  name:
+    CSharp: Global
+    VB: ''
+  nameWithType:
+    CSharp: Global
+    VB: ''
+  qualifiedName:
+    CSharp: Global
+    VB: ''
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: Global.Fence
+    commentId: T:Global.Fence
+    language: CSharp
+    name:
+      CSharp: Fence
+      VB: Fence
+    nameWithType:
+      CSharp: Fence
+      VB: Fence
+    qualifiedName:
+      CSharp: Fence
+      VB: Fence
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: Fence
+      path: ''
+      startLine: 7
+    summary: "\nHolds data about fence\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Fence : Editor'
+        VB: >-
+          Public Class Fence
+
+              Inherits Editor
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: Global.FenceBuilder
+    commentId: T:Global.FenceBuilder
+    language: CSharp
+    name:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    nameWithType:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    qualifiedName:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: FenceBuilder
+      path: ''
+      startLine: 21
+    summary: "\nFence Builder Window\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class FenceBuilder : EditorWindow'
+        VB: >-
+          Public Class FenceBuilder
+
+              Inherits EditorWindow
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.FenceBuilder.OpenFenceBuilder
+      commentId: M:Global.FenceBuilder.OpenFenceBuilder
+      language: CSharp
+      name:
+        CSharp: OpenFenceBuilder()
+        VB: OpenFenceBuilder()
+      nameWithType:
+        CSharp: FenceBuilder.OpenFenceBuilder()
+        VB: FenceBuilder.OpenFenceBuilder()
+      qualifiedName:
+        CSharp: FenceBuilder.OpenFenceBuilder()
+        VB: FenceBuilder.OpenFenceBuilder()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: OpenFenceBuilder
+        path: ''
+        startLine: 23
+      syntax:
+        content:
+          CSharp: public static void OpenFenceBuilder()
+          VB: Public Shared Sub OpenFenceBuilder
+      overload: Global.FenceBuilder.OpenFenceBuilder*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Global.FenceBuilder.DuringSceneGUI(SceneView)
+      commentId: M:Global.FenceBuilder.DuringSceneGUI(SceneView)
+      language: CSharp
+      name:
+        CSharp: DuringSceneGUI(SceneView)
+        VB: DuringSceneGUI(SceneView)
+      nameWithType:
+        CSharp: FenceBuilder.DuringSceneGUI(SceneView)
+        VB: FenceBuilder.DuringSceneGUI(SceneView)
+      qualifiedName:
+        CSharp: FenceBuilder.DuringSceneGUI(SceneView)
+        VB: FenceBuilder.DuringSceneGUI(SceneView)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: DuringSceneGUI
+        path: ''
+        startLine: 43
+      summary: "\nDuring Scen GUI\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void DuringSceneGUI(SceneView sceneView)
+          VB: Public Sub DuringSceneGUI(sceneView As SceneView)
+        parameters:
+        - id: sceneView
+          type: Global.SceneView
+          description: asdasdasd
+      overload: Global.FenceBuilder.DuringSceneGUI*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.CreateFence
+      commentId: M:Global.FenceBuilder.CreateFence
+      language: CSharp
+      name:
+        CSharp: CreateFence()
+        VB: CreateFence()
+      nameWithType:
+        CSharp: FenceBuilder.CreateFence()
+        VB: FenceBuilder.CreateFence()
+      qualifiedName:
+        CSharp: FenceBuilder.CreateFence()
+        VB: FenceBuilder.CreateFence()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: CreateFence
+        path: ''
+        startLine: 55
+      summary: "\nMaking new Fence\n"
+      example: []
+      syntax:
+        content:
+          CSharp: protected void CreateFence()
+          VB: Protected Sub CreateFence
+      overload: Global.FenceBuilder.CreateFence*
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+references:
+  Global.Fence:
+    name:
+      CSharp:
+      - id: Global.Fence
+        name: Fence
+        nameWithType: Fence
+        qualifiedName: Fence
+      VB:
+      - id: Global.Fence
+        name: Fence
+        nameWithType: Fence
+        qualifiedName: Fence
+    isDefinition: true
+    commentId: T:Global.Fence
+  Global.FenceBuilder.OpenFenceBuilder*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.OpenFenceBuilder*
+        name: OpenFenceBuilder
+        nameWithType: FenceBuilder.OpenFenceBuilder
+        qualifiedName: FenceBuilder.OpenFenceBuilder
+      VB:
+      - id: Global.FenceBuilder.OpenFenceBuilder*
+        name: OpenFenceBuilder
+        nameWithType: FenceBuilder.OpenFenceBuilder
+        qualifiedName: FenceBuilder.OpenFenceBuilder
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.OpenFenceBuilder
+  Global.SceneView:
+    name:
+      CSharp:
+      - id: Global.SceneView
+        name: SceneView
+        nameWithType: SceneView
+        qualifiedName: SceneView
+        isExternal: true
+      VB:
+      - id: Global.SceneView
+        name: SceneView
+        nameWithType: SceneView
+        qualifiedName: SceneView
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Global.SceneView'
+  Global.FenceBuilder.DuringSceneGUI*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.DuringSceneGUI*
+        name: DuringSceneGUI
+        nameWithType: FenceBuilder.DuringSceneGUI
+        qualifiedName: FenceBuilder.DuringSceneGUI
+      VB:
+      - id: Global.FenceBuilder.DuringSceneGUI*
+        name: DuringSceneGUI
+        nameWithType: FenceBuilder.DuringSceneGUI
+        qualifiedName: FenceBuilder.DuringSceneGUI
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.DuringSceneGUI
+  Global.FenceBuilder.CreateFence*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.CreateFence*
+        name: CreateFence
+        nameWithType: FenceBuilder.CreateFence
+        qualifiedName: FenceBuilder.CreateFence
+      VB:
+      - id: Global.FenceBuilder.CreateFence*
+        name: CreateFence
+        nameWithType: FenceBuilder.CreateFence
+        qualifiedName: FenceBuilder.CreateFence
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.CreateFence
+  Global.FenceBuilder:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder
+        name: FenceBuilder
+        nameWithType: FenceBuilder
+        qualifiedName: FenceBuilder
+      VB:
+      - id: Global.FenceBuilder
+        name: FenceBuilder
+        nameWithType: FenceBuilder
+        qualifiedName: FenceBuilder
+    isDefinition: true
+    commentId: T:Global.FenceBuilder
+  Global:
+    name:
+      CSharp:
+      - name: Global
+        nameWithType: Global
+        qualifiedName: Global
+      VB:
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+    isDefinition: true

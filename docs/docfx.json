@@ -3,9 +3,10 @@
     {
       "src": [
         {
-          "src": "../",
+          "src": "../Assets",
           "files": [
-            "Assets/Editor/FenceTool/**.cs"
+            "Editor/FenceTool/**.cs",
+            "Scripts/ExtensionMethods.cs"
           ]
         }
       ],

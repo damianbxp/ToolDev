@@ -4,22 +4,21 @@ using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-/// Fence Builder Window
+/// Fence Builder Window. Allows to create and manage fences in scene
 /// </summary>
 
 public class FenceBuilder : EditorWindow
 {
+    /// <summary>
+    /// Method used to open window
+    /// </summary>
     [MenuItem("Tools/Fence Builder")]
     public static void OpenFenceBuilder() => GetWindow<FenceBuilder>("Fence Builder");
-    /// <summary>
-    /// Stores all fences
-    /// </summary>
+
     private List<Fence> fences;
     
     private GameObject fencesMaster;
-    /// <value>
-    /// Name of fence master
-    /// </value>
+
     private const string fenceMasterName = "Fences Master";
 
     private void OnEnable() {
@@ -29,7 +28,9 @@ public class FenceBuilder : EditorWindow
     private void OnDisable() {
         SceneView.duringSceneGui -= DuringSceneGUI;
     }
-
+    /// <summary>
+    /// Being called whem active scene redraws
+    /// </summary>
     private void DuringSceneGUI(SceneView sceneView) {
 
     }
@@ -40,9 +41,9 @@ public class FenceBuilder : EditorWindow
         }
     }
     /// <summary>
-    /// Creates New Fence. Adds new Fence Master if needed
+    /// Create new Fence
     /// </summary>
-    private void CreateFence() {
+    public void CreateFence() {
         if(fencesMaster != null && GameObject.Find(fenceMasterName) != null) {
             fencesMaster = GameObject.Find(fenceMasterName);
         } else {
