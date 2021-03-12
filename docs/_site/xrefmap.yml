@@ -1,0 +1,71 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Global
+  name: Global
+  href: api/Global.html
+  name.vb: ''
+  fullName: Global
+  fullName.vb: ''
+  nameWithType: Global
+  nameWithType.vb: ''
+- uid: Global.ExtensionMethods
+  name: ExtensionMethods
+  href: api/Global.ExtensionMethods.html
+  commentId: T:Global.ExtensionMethods
+  fullName: ExtensionMethods
+  nameWithType: ExtensionMethods
+- uid: Global.ExtensionMethods.Contains(System.Collections.Generic.List{MirrorPair},GameObject)
+  name: Contains(List<MirrorPair>, GameObject)
+  href: api/Global.ExtensionMethods.html#Global_ExtensionMethods_Contains_System_Collections_Generic_List_MirrorPair__GameObject_
+  commentId: M:Global.ExtensionMethods.Contains(System.Collections.Generic.List{MirrorPair},GameObject)
+  name.vb: Contains(List(Of MirrorPair), GameObject)
+  fullName: ExtensionMethods.Contains(System.Collections.Generic.List<MirrorPair>, GameObject)
+  fullName.vb: ExtensionMethods.Contains(System.Collections.Generic.List(Of MirrorPair), GameObject)
+  nameWithType: ExtensionMethods.Contains(List<MirrorPair>, GameObject)
+  nameWithType.vb: ExtensionMethods.Contains(List(Of MirrorPair), GameObject)
+- uid: Global.ExtensionMethods.Contains*
+  name: Contains
+  href: api/Global.ExtensionMethods.html#Global_ExtensionMethods_Contains_
+  commentId: Overload:Global.ExtensionMethods.Contains
+  isSpec: "True"
+  fullName: ExtensionMethods.Contains
+  nameWithType: ExtensionMethods.Contains
+- uid: Global.Fence
+  name: Fence
+  href: api/Global.Fence.html
+  commentId: T:Global.Fence
+  fullName: Fence
+  nameWithType: Fence
+- uid: Global.FenceBuilder
+  name: FenceBuilder
+  href: api/Global.FenceBuilder.html
+  commentId: T:Global.FenceBuilder
+  fullName: FenceBuilder
+  nameWithType: FenceBuilder
+- uid: Global.FenceBuilder.CreateFence
+  name: CreateFence()
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence
+  commentId: M:Global.FenceBuilder.CreateFence
+  fullName: FenceBuilder.CreateFence()
+  nameWithType: FenceBuilder.CreateFence()
+- uid: Global.FenceBuilder.CreateFence*
+  name: CreateFence
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence_
+  commentId: Overload:Global.FenceBuilder.CreateFence
+  isSpec: "True"
+  fullName: FenceBuilder.CreateFence
+  nameWithType: FenceBuilder.CreateFence
+- uid: Global.FenceBuilder.OpenFenceBuilder
+  name: OpenFenceBuilder()
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_OpenFenceBuilder
+  commentId: M:Global.FenceBuilder.OpenFenceBuilder
+  fullName: FenceBuilder.OpenFenceBuilder()
+  nameWithType: FenceBuilder.OpenFenceBuilder()
+- uid: Global.FenceBuilder.OpenFenceBuilder*
+  name: OpenFenceBuilder
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_OpenFenceBuilder_
+  commentId: Overload:Global.FenceBuilder.OpenFenceBuilder
+  isSpec: "True"
+  fullName: FenceBuilder.OpenFenceBuilder
+  nameWithType: FenceBuilder.OpenFenceBuilder
