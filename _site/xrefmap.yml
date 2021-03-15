@@ -31,24 +31,24 @@ references:
   isSpec: "True"
   fullName: ExtensionMethods.Contains
   nameWithType: ExtensionMethods.Contains
-- uid: Global.Fence
-  name: Fence
-  href: api/Global.Fence.html
-  commentId: T:Global.Fence
-  fullName: Fence
-  nameWithType: Fence
 - uid: Global.FenceBuilder
   name: FenceBuilder
   href: api/Global.FenceBuilder.html
   commentId: T:Global.FenceBuilder
   fullName: FenceBuilder
   nameWithType: FenceBuilder
-- uid: Global.FenceBuilder.CreateFence
-  name: CreateFence()
-  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence
-  commentId: M:Global.FenceBuilder.CreateFence
-  fullName: FenceBuilder.CreateFence()
-  nameWithType: FenceBuilder.CreateFence()
+- uid: Global.FenceBuilder.CreateFence(System.String)
+  name: CreateFence(String)
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence_System_String_
+  commentId: M:Global.FenceBuilder.CreateFence(System.String)
+  fullName: FenceBuilder.CreateFence(System.String)
+  nameWithType: FenceBuilder.CreateFence(String)
+- uid: Global.FenceBuilder.CreateFence(System.String,Vector3)
+  name: CreateFence(String, Vector3)
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence_System_String_Vector3_
+  commentId: M:Global.FenceBuilder.CreateFence(System.String,Vector3)
+  fullName: FenceBuilder.CreateFence(System.String, Vector3)
+  nameWithType: FenceBuilder.CreateFence(String, Vector3)
 - uid: Global.FenceBuilder.CreateFence*
   name: CreateFence
   href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateFence_
@@ -56,6 +56,58 @@ references:
   isSpec: "True"
   fullName: FenceBuilder.CreateFence
   nameWithType: FenceBuilder.CreateFence
+- uid: Global.FenceBuilder.CreateWaypoint(Fence,Vector3)
+  name: CreateWaypoint(Fence, Vector3)
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateWaypoint_Fence_Vector3_
+  commentId: M:Global.FenceBuilder.CreateWaypoint(Fence,Vector3)
+  fullName: FenceBuilder.CreateWaypoint(Fence, Vector3)
+  nameWithType: FenceBuilder.CreateWaypoint(Fence, Vector3)
+- uid: Global.FenceBuilder.CreateWaypoint*
+  name: CreateWaypoint
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_CreateWaypoint_
+  commentId: Overload:Global.FenceBuilder.CreateWaypoint
+  isSpec: "True"
+  fullName: FenceBuilder.CreateWaypoint
+  nameWithType: FenceBuilder.CreateWaypoint
+- uid: Global.FenceBuilder.GetFence(System.Int32)
+  name: GetFence(Int32)
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFence_System_Int32_
+  commentId: M:Global.FenceBuilder.GetFence(System.Int32)
+  fullName: FenceBuilder.GetFence(System.Int32)
+  nameWithType: FenceBuilder.GetFence(Int32)
+- uid: Global.FenceBuilder.GetFence*
+  name: GetFence
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFence_
+  commentId: Overload:Global.FenceBuilder.GetFence
+  isSpec: "True"
+  fullName: FenceBuilder.GetFence
+  nameWithType: FenceBuilder.GetFence
+- uid: Global.FenceBuilder.GetFenceName(System.Int32)
+  name: GetFenceName(Int32)
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFenceName_System_Int32_
+  commentId: M:Global.FenceBuilder.GetFenceName(System.Int32)
+  fullName: FenceBuilder.GetFenceName(System.Int32)
+  nameWithType: FenceBuilder.GetFenceName(Int32)
+- uid: Global.FenceBuilder.GetFenceName*
+  name: GetFenceName
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFenceName_
+  commentId: Overload:Global.FenceBuilder.GetFenceName
+  isSpec: "True"
+  fullName: FenceBuilder.GetFenceName
+  nameWithType: FenceBuilder.GetFenceName
+- uid: Global.FenceBuilder.GetFencesNames
+  name: GetFencesNames()
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFencesNames
+  commentId: M:Global.FenceBuilder.GetFencesNames
+  fullName: FenceBuilder.GetFencesNames()
+  nameWithType: FenceBuilder.GetFencesNames()
+- uid: Global.FenceBuilder.GetFencesNames*
+  name: GetFencesNames
+  href: api/Global.FenceBuilder.html#Global_FenceBuilder_GetFencesNames_
+  commentId: Overload:Global.FenceBuilder.GetFencesNames
+  isSpec: "True"
+  fullName: FenceBuilder.GetFencesNames
+  nameWithType: FenceBuilder.GetFencesNames
 - uid: Global.FenceBuilder.OpenFenceBuilder
   name: OpenFenceBuilder()
   href: api/Global.FenceBuilder.html#Global_FenceBuilder_OpenFenceBuilder

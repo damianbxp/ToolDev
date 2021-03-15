@@ -1,0 +1,1051 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: Global
+  language: CSharp
+  name:
+    CSharp: Global
+    VB: ''
+  nameWithType:
+    CSharp: Global
+    VB: ''
+  qualifiedName:
+    CSharp: Global
+    VB: ''
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: Global.FenceBuilder
+    commentId: T:Global.FenceBuilder
+    language: CSharp
+    name:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    nameWithType:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    qualifiedName:
+      CSharp: FenceBuilder
+      VB: FenceBuilder
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: FenceBuilder
+      path: ''
+      startLine: 9
+    summary: "\nFence Builder Window. Allows to create and manage fences in scene\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class FenceBuilder : EditorWindow'
+        VB: >-
+          Public Class FenceBuilder
+
+              Inherits EditorWindow
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.FenceBuilder.OpenFenceBuilder
+      commentId: M:Global.FenceBuilder.OpenFenceBuilder
+      language: CSharp
+      name:
+        CSharp: OpenFenceBuilder()
+        VB: OpenFenceBuilder()
+      nameWithType:
+        CSharp: FenceBuilder.OpenFenceBuilder()
+        VB: FenceBuilder.OpenFenceBuilder()
+      qualifiedName:
+        CSharp: FenceBuilder.OpenFenceBuilder()
+        VB: FenceBuilder.OpenFenceBuilder()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: OpenFenceBuilder
+        path: ''
+        startLine: 14
+      summary: "\nMethod used to open window\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void OpenFenceBuilder()
+          VB: Public Shared Sub OpenFenceBuilder
+      overload: Global.FenceBuilder.OpenFenceBuilder*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Global.FenceBuilder.CreateFence(System.String,Vector3)
+      commentId: M:Global.FenceBuilder.CreateFence(System.String,Vector3)
+      language: CSharp
+      name:
+        CSharp: CreateFence(String, Vector3)
+        VB: CreateFence(String, Vector3)
+      nameWithType:
+        CSharp: FenceBuilder.CreateFence(String, Vector3)
+        VB: FenceBuilder.CreateFence(String, Vector3)
+      qualifiedName:
+        CSharp: FenceBuilder.CreateFence(System.String, Vector3)
+        VB: FenceBuilder.CreateFence(System.String, Vector3)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: CreateFence
+        path: ''
+        startLine: 61
+      summary: "\nCreate new Fence. Create new fenceMaster if needed. \n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void CreateFence(string name, Vector3 pos)
+          VB: Public Sub CreateFence(name As String, pos As Vector3)
+        parameters:
+        - id: name
+          type: System.String
+          description: Name of new fence
+        - id: pos
+          type: Global.Vector3
+          description: Position of new fence root
+      overload: Global.FenceBuilder.CreateFence*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.CreateFence(System.String)
+      commentId: M:Global.FenceBuilder.CreateFence(System.String)
+      language: CSharp
+      name:
+        CSharp: CreateFence(String)
+        VB: CreateFence(String)
+      nameWithType:
+        CSharp: FenceBuilder.CreateFence(String)
+        VB: FenceBuilder.CreateFence(String)
+      qualifiedName:
+        CSharp: FenceBuilder.CreateFence(System.String)
+        VB: FenceBuilder.CreateFence(System.String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: CreateFence
+        path: ''
+        startLine: 76
+      syntax:
+        content:
+          CSharp: public void CreateFence(string name)
+          VB: Public Sub CreateFence(name As String)
+        parameters:
+        - id: name
+          type: System.String
+      overload: Global.FenceBuilder.CreateFence*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.CreateWaypoint(Fence,Vector3)
+      commentId: M:Global.FenceBuilder.CreateWaypoint(Fence,Vector3)
+      language: CSharp
+      name:
+        CSharp: CreateWaypoint(Fence, Vector3)
+        VB: CreateWaypoint(Fence, Vector3)
+      nameWithType:
+        CSharp: FenceBuilder.CreateWaypoint(Fence, Vector3)
+        VB: FenceBuilder.CreateWaypoint(Fence, Vector3)
+      qualifiedName:
+        CSharp: FenceBuilder.CreateWaypoint(Fence, Vector3)
+        VB: FenceBuilder.CreateWaypoint(Fence, Vector3)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: CreateWaypoint
+        path: ''
+        startLine: 83
+      summary: "\nCreates new waypoint in given fence\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void CreateWaypoint(Fence fence, Vector3 pos)
+          VB: Public Sub CreateWaypoint(fence As Fence, pos As Vector3)
+        parameters:
+        - id: fence
+          type: Global.Fence
+          description: Specify which fence should create waypoint
+        - id: pos
+          type: Global.Vector3
+          description: Position for new waypoint
+      overload: Global.FenceBuilder.CreateWaypoint*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.GetFence(System.Int32)
+      commentId: M:Global.FenceBuilder.GetFence(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetFence(Int32)
+        VB: GetFence(Int32)
+      nameWithType:
+        CSharp: FenceBuilder.GetFence(Int32)
+        VB: FenceBuilder.GetFence(Int32)
+      qualifiedName:
+        CSharp: FenceBuilder.GetFence(System.Int32)
+        VB: FenceBuilder.GetFence(System.Int32)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: GetFence
+        path: ''
+        startLine: 92
+      summary: "\nGet fence reference\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Fence GetFence(int i)
+          VB: Public Function GetFence(i As Integer) As Fence
+        parameters:
+        - id: i
+          type: System.Int32
+          description: Fence Id
+        return:
+          type: Global.Fence
+          description: Fence at given id
+      overload: Global.FenceBuilder.GetFence*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.GetFenceName(System.Int32)
+      commentId: M:Global.FenceBuilder.GetFenceName(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetFenceName(Int32)
+        VB: GetFenceName(Int32)
+      nameWithType:
+        CSharp: FenceBuilder.GetFenceName(Int32)
+        VB: FenceBuilder.GetFenceName(Int32)
+      qualifiedName:
+        CSharp: FenceBuilder.GetFenceName(System.Int32)
+        VB: FenceBuilder.GetFenceName(System.Int32)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: GetFenceName
+        path: ''
+        startLine: 99
+      summary: "\nGet name of fence at Id\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string GetFenceName(int i)
+          VB: Public Function GetFenceName(i As Integer) As String
+        parameters:
+        - id: i
+          type: System.Int32
+          description: Fence Id
+        return:
+          type: System.String
+          description: Name of fence
+      overload: Global.FenceBuilder.GetFenceName*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.FenceBuilder.GetFencesNames
+      commentId: M:Global.FenceBuilder.GetFencesNames
+      language: CSharp
+      name:
+        CSharp: GetFencesNames()
+        VB: GetFencesNames()
+      nameWithType:
+        CSharp: FenceBuilder.GetFencesNames()
+        VB: FenceBuilder.GetFencesNames()
+      qualifiedName:
+        CSharp: FenceBuilder.GetFencesNames()
+        VB: FenceBuilder.GetFencesNames()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: GetFencesNames
+        path: ''
+        startLine: 105
+      summary: "\nReturns names of all fences\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string[] GetFencesNames()
+          VB: Public Function GetFencesNames As String()
+        return:
+          type: System.String[]
+          description: Names of all fences
+      overload: Global.FenceBuilder.GetFencesNames*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Global.ExtensionMethods
+    commentId: T:Global.ExtensionMethods
+    language: CSharp
+    name:
+      CSharp: ExtensionMethods
+      VB: ExtensionMethods
+    nameWithType:
+      CSharp: ExtensionMethods
+      VB: ExtensionMethods
+    qualifiedName:
+      CSharp: ExtensionMethods
+      VB: ExtensionMethods
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: ExtensionMethods
+      path: ''
+      startLine: 120
+    syntax:
+      content:
+        CSharp: public static class ExtensionMethods
+        VB: Public Module ExtensionMethods
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - isExtensionMethod: true
+      id: Global.ExtensionMethods.Contains(System.Collections.Generic.List{MirrorPair},GameObject)
+      commentId: M:Global.ExtensionMethods.Contains(System.Collections.Generic.List{MirrorPair},GameObject)
+      language: CSharp
+      name:
+        CSharp: Contains(List<MirrorPair>, GameObject)
+        VB: Contains(List(Of MirrorPair), GameObject)
+      nameWithType:
+        CSharp: ExtensionMethods.Contains(List<MirrorPair>, GameObject)
+        VB: ExtensionMethods.Contains(List(Of MirrorPair), GameObject)
+      qualifiedName:
+        CSharp: ExtensionMethods.Contains(System.Collections.Generic.List<MirrorPair>, GameObject)
+        VB: ExtensionMethods.Contains(System.Collections.Generic.List(Of MirrorPair), GameObject)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: Contains
+        path: ''
+        startLine: 128
+      summary: "\nReturns true if given list contain given MirrorPair\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static bool Contains(this List<MirrorPair> list, GameObject gmToCheck)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Function Contains(list As List(Of MirrorPair), gmToCheck As GameObject) As Boolean
+        parameters:
+        - id: list
+          type: System.Collections.Generic.List{MirrorPair}
+          description: List to search
+        - id: gmToCheck
+          type: Global.GameObject
+          description: MirrorPair to look for
+        return:
+          type: System.Boolean
+          description: True when MirrorPair found in list
+      overload: Global.ExtensionMethods.Contains*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+references:
+  Global.FenceBuilder.OpenFenceBuilder*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.OpenFenceBuilder*
+        name: OpenFenceBuilder
+        nameWithType: FenceBuilder.OpenFenceBuilder
+        qualifiedName: FenceBuilder.OpenFenceBuilder
+      VB:
+      - id: Global.FenceBuilder.OpenFenceBuilder*
+        name: OpenFenceBuilder
+        nameWithType: FenceBuilder.OpenFenceBuilder
+        qualifiedName: FenceBuilder.OpenFenceBuilder
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.OpenFenceBuilder
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  Global.Vector3:
+    name:
+      CSharp:
+      - id: Global.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+      VB:
+      - id: Global.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+    isDefinition: true
+  Global.FenceBuilder.CreateFence*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.CreateFence*
+        name: CreateFence
+        nameWithType: FenceBuilder.CreateFence
+        qualifiedName: FenceBuilder.CreateFence
+      VB:
+      - id: Global.FenceBuilder.CreateFence*
+        name: CreateFence
+        nameWithType: FenceBuilder.CreateFence
+        qualifiedName: FenceBuilder.CreateFence
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.CreateFence
+  Global.Fence:
+    name:
+      CSharp:
+      - id: Global.Fence
+        name: Fence
+        nameWithType: Fence
+        qualifiedName: Fence
+        isExternal: true
+      VB:
+      - id: Global.Fence
+        name: Fence
+        nameWithType: Fence
+        qualifiedName: Fence
+        isExternal: true
+    isDefinition: true
+  Global.FenceBuilder.CreateWaypoint*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.CreateWaypoint*
+        name: CreateWaypoint
+        nameWithType: FenceBuilder.CreateWaypoint
+        qualifiedName: FenceBuilder.CreateWaypoint
+      VB:
+      - id: Global.FenceBuilder.CreateWaypoint*
+        name: CreateWaypoint
+        nameWithType: FenceBuilder.CreateWaypoint
+        qualifiedName: FenceBuilder.CreateWaypoint
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.CreateWaypoint
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  Global.FenceBuilder.GetFence*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.GetFence*
+        name: GetFence
+        nameWithType: FenceBuilder.GetFence
+        qualifiedName: FenceBuilder.GetFence
+      VB:
+      - id: Global.FenceBuilder.GetFence*
+        name: GetFence
+        nameWithType: FenceBuilder.GetFence
+        qualifiedName: FenceBuilder.GetFence
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.GetFence
+  Global.FenceBuilder.GetFenceName*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.GetFenceName*
+        name: GetFenceName
+        nameWithType: FenceBuilder.GetFenceName
+        qualifiedName: FenceBuilder.GetFenceName
+      VB:
+      - id: Global.FenceBuilder.GetFenceName*
+        name: GetFenceName
+        nameWithType: FenceBuilder.GetFenceName
+        qualifiedName: FenceBuilder.GetFenceName
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.GetFenceName
+  System.String[]:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  Global.FenceBuilder.GetFencesNames*:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder.GetFencesNames*
+        name: GetFencesNames
+        nameWithType: FenceBuilder.GetFencesNames
+        qualifiedName: FenceBuilder.GetFencesNames
+      VB:
+      - id: Global.FenceBuilder.GetFencesNames*
+        name: GetFencesNames
+        nameWithType: FenceBuilder.GetFencesNames
+        qualifiedName: FenceBuilder.GetFencesNames
+    isDefinition: true
+    commentId: Overload:Global.FenceBuilder.GetFencesNames
+  Global.FenceBuilder:
+    name:
+      CSharp:
+      - id: Global.FenceBuilder
+        name: FenceBuilder
+        nameWithType: FenceBuilder
+        qualifiedName: FenceBuilder
+      VB:
+      - id: Global.FenceBuilder
+        name: FenceBuilder
+        nameWithType: FenceBuilder
+        qualifiedName: FenceBuilder
+    isDefinition: true
+    commentId: T:Global.FenceBuilder
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  System.Collections.Generic.List`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.List`1
+  System.Collections.Generic:
+    name:
+      CSharp:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+        isExternal: true
+      VB:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+    isDefinition: true
+    commentId: N:System.Collections.Generic
+  System.Collections.Generic.List{MirrorPair}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: Global.MirrorPair
+        name: MirrorPair
+        nameWithType: MirrorPair
+        qualifiedName: MirrorPair
+        isExternal: true
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: Global.MirrorPair
+        name: MirrorPair
+        nameWithType: MirrorPair
+        qualifiedName: MirrorPair
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{MirrorPair}
+  Global.GameObject:
+    name:
+      CSharp:
+      - id: Global.GameObject
+        name: GameObject
+        nameWithType: GameObject
+        qualifiedName: GameObject
+        isExternal: true
+      VB:
+      - id: Global.GameObject
+        name: GameObject
+        nameWithType: GameObject
+        qualifiedName: GameObject
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Global.GameObject'
+  Global.ExtensionMethods.Contains*:
+    name:
+      CSharp:
+      - id: Global.ExtensionMethods.Contains*
+        name: Contains
+        nameWithType: ExtensionMethods.Contains
+        qualifiedName: ExtensionMethods.Contains
+      VB:
+      - id: Global.ExtensionMethods.Contains*
+        name: Contains
+        nameWithType: ExtensionMethods.Contains
+        qualifiedName: ExtensionMethods.Contains
+    isDefinition: true
+    commentId: Overload:Global.ExtensionMethods.Contains
+  Global.ExtensionMethods:
+    name:
+      CSharp:
+      - id: Global.ExtensionMethods
+        name: ExtensionMethods
+        nameWithType: ExtensionMethods
+        qualifiedName: ExtensionMethods
+      VB:
+      - id: Global.ExtensionMethods
+        name: ExtensionMethods
+        nameWithType: ExtensionMethods
+        qualifiedName: ExtensionMethods
+    isDefinition: true
+    commentId: T:Global.ExtensionMethods
+  Global:
+    name:
+      CSharp:
+      - name: Global
+        nameWithType: Global
+        qualifiedName: Global
+      VB:
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+    isDefinition: true
