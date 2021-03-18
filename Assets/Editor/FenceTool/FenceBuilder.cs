@@ -16,14 +16,30 @@ public class FenceBuilder : EditorWindow
     public static void OpenFenceBuilder() => GetWindow<FenceBuilder>("Fence Builder");
 
     private GameObject fencesMaster;
+    public GameObject postPrefab;
+
+    public int editFenceId = 0;
+    private Fence editFence;
 
     private string newFenceName;
-    private int editFenceId;
     private Vector2 scrollPos;
     private const string fenceMasterName = "Fences Master";
 
+    SerializedObject so;
+    SerializedProperty editFenceIdProp;
+    SerializedProperty postPrefabProp;
+
+    #region 
+    private int lastEditFenceId;
+    private bool lastClosedPath;
+    #endregion
     private void OnEnable() {
+        so = new SerializedObject(this);
+        editFenceIdProp = so.FindProperty("editFenceId");
+        postPrefabProp = so.FindProperty("postPrefab");
         fencesMaster = GameObject.Find(fenceMasterName);
+        UpdateEditFence();
+
         SceneView.duringSceneGui += DuringSceneGUI;
     }
     private void OnDisable() {
@@ -31,28 +47,51 @@ public class FenceBuilder : EditorWindow
     }
 
     private void DuringSceneGUI(SceneView sceneView) {
-        GetFence(editFenceId).DrawGizmosLines();
+        if(editFence == null) UpdateEditFence();
+        editFence.DrawGizmosLines();
     }
 
     private void OnGUI() {
+        so.Update();
+
         using(new GUILayout.HorizontalScope(EditorStyles.helpBox)) {
             newFenceName = EditorGUILayout.TextField(newFenceName);
             if(GUILayout.Button("Create Fence")) CreateFence(newFenceName);
         }
 
         using(new GUILayout.VerticalScope()) {
-            editFenceId = EditorGUILayout.Popup(editFenceId, GetFencesNames());
-            if(GUILayout.Button("Create Waypoint")) CreateWaypoint(GetFence(editFenceId), Vector3.zero);
+            editFenceIdProp.intValue = EditorGUILayout.Popup(editFenceIdProp.intValue, GetFencesNames());
+            if(GUILayout.Button("Create Waypoint")) CreateWaypoint(editFence, Vector3.zero);
+            using(new GUILayout.HorizontalScope()) {
+                if(GUILayout.Button("Fix Naming")) FixNames(editFence);
+                if(GUILayout.Button("Rebuild")) RebuildFence(editFence);
+            }
+            EditorGUILayout.PropertyField(postPrefabProp);
+            lastClosedPath = editFence.closedPath;
+            editFence.closedPath = EditorGUILayout.Toggle("Closed Path", editFence.closedPath);
+            if(lastClosedPath != editFence.closedPath) SceneView.RepaintAll();
         }
 
 
         scrollPos = GUILayout.BeginScrollView(scrollPos);
         for(int i = 0; i < fencesMaster.transform.childCount; i++) {
             GetFence(i).expandDisplay = EditorGUILayout.Foldout(GetFence(i).expandDisplay, GetFenceName(i));
-
+            if(GetFence(i).expandDisplay) {
+                UpdateEditFence();
+            }
         }
         GUILayout.EndScrollView();
-
+        if(so.ApplyModifiedProperties()) {
+            UpdateEditFence();
+            Repaint();
+        }
+        //True if Undo or Redo used
+        if(Event.current.type == EventType.ValidateCommand)
+            if(Event.current.commandName == "UndoRedoPerformed") {
+                UpdateEditFence();
+                Repaint();
+            }
+        
     }
     /// <summary>
     /// Create new Fence. Create new fenceMaster if needed. 
@@ -115,5 +154,14 @@ public class FenceBuilder : EditorWindow
         }
 
         return fenceNames;
+    }
+
+    public void FixNames(Fence fence) => fence.FixNames();
+
+    public void RebuildFence(Fence fence) => fence.Rebuild(postPrefabProp.objectReferenceValue as GameObject);
+
+    private void UpdateEditFence() {
+        editFence = GetFence(editFenceId);
+        SceneView.RepaintAll();
     }
 }
