@@ -35,7 +35,6 @@ public static class SceneHierarchyUtility {
     /// </summary>
     public static void SetExpanded(GameObject go, bool expand) {
         object sceneHierarchy = GetSceneHierarchy();
-        Debug.Log(go.name);
         MethodInfo methodInfo = sceneHierarchy
             .GetType()
             .GetMethod("ExpandTreeViewItem", BindingFlags.NonPublic | BindingFlags.Instance);

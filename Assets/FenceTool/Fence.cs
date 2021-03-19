@@ -16,6 +16,8 @@ public class Fence : MonoBehaviour
 
     public GameObject FencePost;
 
+    const int layer = 8;
+
     /// <summary>
     /// Creates new Waypoint at given position
     /// </summary>
@@ -25,6 +27,7 @@ public class Fence : MonoBehaviour
         newWaypoint.transform.parent = gameObject.transform;
         newWaypoint.transform.position = pos;
         newWaypoint.AddComponent<FenceWaypoint>();
+        newWaypoint.layer = layer;
 
         PrefabUtility.InstantiatePrefab(FencePost, newWaypoint.transform);
     }
@@ -43,17 +46,26 @@ public class Fence : MonoBehaviour
             Handles.color = Color.white;
         }
     }
-
+    /// <summary>
+    /// Generates names of fence waypoints based on fence name by adding index
+    /// </summary>
     public void FixNames() {
         for(int i = 0; i < transform.childCount; i++) {
             transform.GetChild(i).name = name + " " + i.ToString();
         }
     }
-
+    /// <summary>
+    /// Rebuilds Fence Meshes
+    /// </summary>
+    /// <param name="newPrefab">New prefab</param>
     public void Rebuild(GameObject newPrefab) {
         UpdatePrefabs(newPrefab);
+        UpdateLayer(layer);
     }
-
+    /// <summary>
+    /// Deletes old prefab and spawns new if needed
+    /// </summary>
+    /// <param name="prefab">New prefab</param>
     public void UpdatePrefabs(GameObject prefab) {
         FencePost = prefab;
         UpdatePrefabs();
@@ -69,6 +81,32 @@ public class Fence : MonoBehaviour
             } else {
                 PrefabUtility.InstantiatePrefab(FencePost, transform.GetChild(i).transform);
             }
+        }
+    }
+    public void DrawHandles() {
+        if(transform.childCount > 0) {
+            for(int i = 0; i < transform.childCount; i++) {
+                transform.GetChild(i).GetComponent<FenceWaypoint>().DrawPosHandle();
+            }
+
+        }
+    }
+    public void UpdateLayer(int newLayer) {
+        gameObject.layer = newLayer;
+        if(transform.childCount > 0) {
+            for(int i = 0; i < transform.childCount; i++) {
+                transform.GetChild(i).GetComponent<FenceWaypoint>().UpdateLayer(newLayer);
+            }
+
+        }
+    }
+    public void UpdateSettings(float groundScanRange, float groundScanHeightOffset) {
+        if(transform.childCount > 0) {
+            for(int i = 0; i < transform.childCount; i++) {
+                transform.GetChild(i).GetComponent<FenceWaypoint>().GroundScanRange = groundScanRange;
+                transform.GetChild(i).GetComponent<FenceWaypoint>().GroundScanHeightOffset = groundScanHeightOffset;
+            }
+
         }
     }
 }
